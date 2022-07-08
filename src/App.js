@@ -38,7 +38,7 @@ function App() {
   };
 
   const deleteFriend = (id) => {
-    Axios.delete(`https://react-mern-01.herokuapp.com/${id}`).then(() => {
+    Axios.delete(`https://react-mern-01.herokuapp.com/delete/${id}`).then(() => {
       setListOfFriends(listOfFriends.filter((val) => {
         return val._id !== id;
       }));
